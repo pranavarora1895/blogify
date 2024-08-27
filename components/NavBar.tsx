@@ -24,6 +24,8 @@ const NavBar = () => {
             <ul className='hidden md:flex w-full justify-end space-x-6 items-center '>
                 <li><Link href={"/"}>Home</Link></li>
                 <li><Link href={"/about"}>About</Link></li>
+                <li><Link href={"/blog"}>Blog</Link></li>
+                <li><Link href={"/contact"}>Contact</Link></li>
                 <li className="buttons space-x-4 px-4">
                     <Link href={"/login"} className={buttonVariants({ variant: "outline" })}>Login</Link>
                     <Link href={"/signup"} className={buttonVariants({ variant: "outline" })}>SignUp</Link>
@@ -41,6 +43,8 @@ const NavBar = () => {
                         <ul className='w-full justify-center items-center space-y-4'>
                             <li><Link href={"/"}>Home</Link></li>
                             <li><Link href={"/about"}>About</Link></li>
+                            <li><Link href={"/blog"}>Blog</Link></li>
+                            <li><Link href={"/contact"}>Contact</Link></li>
                             <li className="buttons space-x-4 py-4">
                                 <Link href={"/login"} className={buttonVariants({ variant: "outline" })}>Login</Link>
                                 <Link href={"/signup"} className={buttonVariants({ variant: "outline" })}>SignUp</Link>
