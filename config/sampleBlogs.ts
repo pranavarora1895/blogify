@@ -6,7 +6,7 @@ export interface Blog{
     description: string
     author: string
     date: Date;
-    image: string
+    image?: string
   }
 
 const sampleBlogs: Blog[] = [
@@ -17,7 +17,7 @@ const sampleBlogs: Blog[] = [
       description: 'A comprehensive guide to using hooks in React.',
       author: 'John Doe',
       date: new Date('2024-08-27'),
-      image: 'https://via.placeholder.com/150',
+      image: 'blog1.jpg',
       content: `React Hooks provide a powerful and flexible way to manage state and side effects in functional components.
   
   ## Introduction
@@ -51,7 +51,7 @@ const sampleBlogs: Blog[] = [
       description: 'Learn how to style your apps with Tailwind CSS effectively.',
       author: 'Jane Smith',
       date: new Date('2024-08-25'),
-      image: 'https://via.placeholder.com/150',
+      image: 'blog2.jpg',
       content: `Tailwind CSS offers a utility-first approach to styling that allows for rapid development and customization.
   
   ## Features
@@ -78,7 +78,7 @@ const sampleBlogs: Blog[] = [
       description: 'An introduction to the powerful TypeScript language and its benefits for JavaScript developers.',
       author: 'Alice Johnson',
       date: new Date('2024-08-22'),
-      image: 'https://via.placeholder.com/150',
+      image: 'blog3.jpg',
       content: `TypeScript extends JavaScript by adding static types, which can improve code quality and maintainability.
   
   ## Key Benefits
@@ -105,7 +105,7 @@ const sampleBlogs: Blog[] = [
       description: 'A guide to creating flexible and responsive layouts using Flexbox.',
       author: 'Bob Brown',
       date: new Date('2024-08-20'),
-      image: 'https://via.placeholder.com/150',
+      image: 'blog2.jpg',
       content: `Flexbox is a layout model that allows for easy alignment and distribution of space among items in a container.
   
   ## Basics
@@ -133,7 +133,7 @@ const sampleBlogs: Blog[] = [
       description: 'How to manage global state in React applications using Redux.',
       author: 'Eve Adams',
       date: new Date('2024-08-15'),
-      image: 'https://via.placeholder.com/150',
+      image: 'blog1.jpg',
       content: `Redux provides a predictable state container for JavaScript apps, making state management easier and more maintainable.
   
   ## Core Concepts
@@ -169,7 +169,7 @@ const sampleBlogs: Blog[] = [
       description: 'Comparing GraphQL and REST API architectures for modern web applications.',
       author: 'Charlie Green',
       date: new Date('2024-08-10'),
-      image: 'https://via.placeholder.com/150',
+      image: 'blog3.jpg',
       content: `GraphQL offers a more flexible and efficient approach to querying and manipulating data compared to traditional REST APIs.
   
   ## Comparison
@@ -198,7 +198,7 @@ const sampleBlogs: Blog[] = [
       description: 'Techniques and best practices for improving the performance of web applications.',
       author: 'Dana Lee',
       date: new Date('2024-08-05'),
-      image: 'https://via.placeholder.com/150',
+      image: 'blog2.jpg',
       content: `Improving web performance involves optimizing various aspects, such as loading times, rendering, and overall user experience.
   
   ## Techniques
@@ -231,7 +231,7 @@ const sampleBlogs: Blog[] = [
       description: 'An overview of Next.js and how it can enhance your React applications with server-side rendering.',
       author: 'Frank Wilson',
       date: new Date('2024-08-01'),
-      image: 'https://via.placeholder.com/150',
+      image: 'blog3.jpg',
       content: `Next.js is a React framework that enables server-side rendering and static site generation, improving performance and SEO.
   
   ## Features
@@ -262,7 +262,6 @@ const sampleBlogs: Blog[] = [
       description: 'Explore advanced CSS techniques for creating modern and visually appealing web designs.',
       author: 'Grace Martinez',
       date: new Date('2024-07-30'),
-      image: 'https://via.placeholder.com/150',
       content: `Advanced CSS techniques include custom properties, CSS Grid, and animations, allowing for sophisticated and dynamic designs.
   
   ## Techniques
