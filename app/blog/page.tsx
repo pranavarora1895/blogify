@@ -3,6 +3,25 @@ import React from 'react';
 import sampleBlogs, { Blog } from '@/config/sampleBlogs';
 import { Button, buttonVariants } from '@/components/ui/button';
 import Link from 'next/link';
+import fs, { readFileSync } from 'fs'
+import matter from 'gray-matter';
+import { Metadata } from 'next';
+
+const dirContent = fs.readdirSync('content', 'utf-8')
+
+const blogs: Blog[] = dirContent.map(file =>{
+  const fileContent = readFileSync(`content/${file}`, 'utf-8');
+  const {data} = matter(fileContent)
+  const value: Blog = {
+    slug: data.slug,
+    title: data.title,
+    description: data.description,
+    author: data.author,
+    date: data.date,
+    image: data.image
+  }
+  return value
+})
 
 const BlogList = () => {
   return (
@@ -10,7 +29,7 @@ const BlogList = () => {
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold text-center mb-8 pb-4">Our Blogs</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {sampleBlogs.map((blog: Blog) => (
+        {blogs.map((blog: Blog) => (
           <div key={blog.id} className="rounded-lg shadow-lg overflow-hidden">
             {// eslint-disable-next-line @next/next/no-img-element
             }
@@ -30,5 +49,10 @@ const BlogList = () => {
     </MaxWidthWrapper>
   );
 };
+
+export const metadata: Metadata = {
+  title: 'Blogify',
+  description: 'Write blogs in markdown',
+}
 
 export default BlogList;

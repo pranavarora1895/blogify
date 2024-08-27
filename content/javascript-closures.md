@@ -14,7 +14,7 @@ JavaScript closures are a fundamental concept that every JavaScript developer sh
 
 A closure is a function that retains access to its lexical scope, even when the function is executed outside that scope. This is a powerful feature of JavaScript that allows functions to access variables from an enclosing scope, even after that scope has finished executing.
 
-```javascript
+```javascript {1,4-5} showLineNumbers 
 function outerFunction() {
   const outerVariable = 'I am outside!';
 
@@ -39,7 +39,7 @@ Closures are particularly useful for data encapsulation, creating private variab
 
 Let's consider a real-world scenario where closures can be applied:
 
-```javascript
+```javascript showLineNumbers {4-8}
 function counter() {
   let count = 0;
 

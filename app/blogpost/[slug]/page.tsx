@@ -13,6 +13,7 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeSlug from 'rehype-slug'
 import rehypePrettyCode from "rehype-pretty-code";
 import { transformerCopyButton } from '@rehype-pretty/transformers'
+import { Metadata, ResolvingMetadata } from 'next'
 
 const processor = unified()
     .use(remarkParse)
@@ -26,11 +27,11 @@ const processor = unified()
         theme: 'andromeeda',
         transformers: [
             transformerCopyButton({
-              visibility: 'hover',
-              feedbackDuration: 3_000,
+                visibility: 'always',
+                feedbackDuration: 3_000,
             }),
-          ],
-      })
+        ],
+    })
 
 const BlogPage = async ({ params }: { params: { slug: string } }) => {
     const filePath = `content/${params.slug}.md`
@@ -49,10 +50,34 @@ const BlogPage = async ({ params }: { params: { slug: string } }) => {
                     <div dangerouslySetInnerHTML={{ __html: htmlContent }}></div>
                 </div>
 
-                <OnThisPage className='text-sm w-2/6' htmlContent={htmlContent} />
+                <OnThisPage className='text-xs w-1/2' htmlContent={htmlContent} />
             </div>
         </MaxWidthWrapper>
     )
+}
+
+type Props = {
+    params: {
+        id?: number
+        slug: string
+        title: string
+        description: string
+    }
+    searchParams: { [key: string]: string | string[] | undefined }
+}
+
+export async function generateMetadata(
+    { params, searchParams }: Props,
+    parent: ResolvingMetadata
+): Promise<Metadata> {
+    // read route params
+    const filePath = `content/${params.slug}.md`
+    const fileContent = fs.readFileSync(filePath, 'utf-8');
+    const { data, content } = matter(fileContent);
+    return {
+        title: `${data.title} - Blogify`,
+        description: data.description
+    }
 }
 
 export default BlogPage

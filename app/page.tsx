@@ -1,10 +1,134 @@
-import Image from "next/image";
+'use client';
+
+import { useEffect, useRef } from 'react';
+import Typed from 'typed.js';
 
 
 export default function Home() {
+  const el = useRef(null);
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ['Markdown', '.md format'],
+      typeSpeed: 100,
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
   return (
-   <main>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam optio deserunt delectus ipsam accusamus porro pariatur, ipsa eveniet aperiam facilis totam aspernatur. Saepe provident necessitatibus facilis voluptates esse corporis, incidunt enim, dolorem, quis cum rem vitae. Enim tenetur dolore inventore sint, nihil adipisci recusandae dolores earum nostrum totam, laborum, incidunt voluptatum id esse cum ipsam neque mollitia asperiores. Consectetur doloribus eveniet, cumque et delectus natus? Enim nesciunt ad mollitia explicabo distinctio eveniet nobis quas velit, dolores perspiciatis. Repellat placeat dicta autem, magnam voluptas rerum nesciunt culpa consequuntur eaque vitae, aliquam explicabo esse fugit porro voluptatibus eligendi, excepturi labore dolorem obcaecati distinctio. Explicabo voluptatem natus, necessitatibus vitae consectetur sequi! Consequatur nobis quasi quos accusamus temporibus quibusdam molestiae pariatur, dignissimos, labore earum itaque voluptatem iusto ea error blanditiis enim. Esse repellat a quibusdam amet sint maxime laudantium, nisi facilis vel alias delectus doloribus tempore obcaecati nobis modi beatae exercitationem voluptate harum provident ratione, natus culpa! Facilis quae ratione neque alias. Incidunt laborum nam repellendus iure at, eaque blanditiis maiores voluptatibus nisi nostrum tempore ab dolore aliquid ea a inventore, doloremque voluptatum rem, necessitatibus id corrupti laudantium tenetur earum. Incidunt aut, sint inventore tenetur excepturi dolorem quam earum totam iure, dolorum tempore a assumenda aliquam soluta, nostrum cumque necessitatibus commodi quae aliquid iusto. Molestiae natus eligendi aperiam cupiditate incidunt et, reiciendis odit quidem placeat suscipit, saepe culpa. Modi quia accusantium sed aliquid accusamus eaque quas, deserunt voluptas atque. Corrupti ullam id dolorum adipisci minus, neque dicta perspiciatis enim dolorem nesciunt ipsam minima reiciendis totam libero dolore eos quasi cum vel ratione et consectetur atque repellendus veniam tempore? Suscipit unde, animi, est ipsam iste enim tenetur nulla ratione quia accusamus alias nostrum nemo voluptate dolore distinctio delectus, aut a! Maxime, inventore suscipit commodi sint voluptatum facere optio itaque amet? Aliquam est ad minima! Itaque dolore sapiente quis velit facilis culpa atque nulla quibusdam, consequuntur non consectetur necessitatibus minima tempore magni alias dolores delectus ipsum cupiditate numquam reiciendis ullam sit quia. Itaque officiis ipsa voluptate sunt qui corporis eos temporibus praesentium, esse dicta suscipit dolore cumque neque molestias dolorum vero amet quod consectetur ea nostrum. Ipsam enim ipsa omnis quaerat minima, quod similique, quas cum nesciunt quis consectetur excepturi voluptas dicta sapiente commodi alias quidem nemo nisi. Nisi, debitis perferendis. Qui magnam animi ipsam quaerat mollitia aspernatur, quod voluptate, praesentium iure tempora asperiores harum cupiditate maiores deserunt. Ipsum architecto nisi laudantium reiciendis dolores provident quidem consectetur fugiat vel. Accusamus quasi consectetur tempora, saepe sunt explicabo esse, labore unde, libero excepturi incidunt ipsa quis. Explicabo inventore quos optio at expedita. Nobis, cumque praesentium, voluptate sed officia ut quisquam voluptas blanditiis, nemo iste mollitia et. Voluptatum laudantium esse, libero ex provident quis, asperiores recusandae deleniti labore modi exercitationem temporibus ratione pariatur ducimus molestiae velit, animi nisi quod eos quidem similique? Nemo sapiente totam non odit animi aperiam repellat rem! Sit numquam non est nostrum illum suscipit rem officiis labore aliquam maiores nobis officia ipsa expedita blanditiis ipsum ipsam et, voluptates ut tenetur, quidem ab facere temporibus, distinctio perspiciatis. Hic maiores magnam asperiores in minus excepturi molestias saepe culpa praesentium id est quibusdam sit laborum odit, autem cumque assumenda quae, voluptas alias beatae eius, harum laudantium? Recusandae est dolor quas laboriosam natus obcaecati itaque perferendis temporibus, minus saepe voluptatibus eum blanditiis quibusdam ratione excepturi quaerat mollitia. Assumenda ad hic officia laboriosam autem non animi perspiciatis quam accusantium veniam ipsa aliquid repudiandae unde nostrum delectus numquam molestiae minima quos, dicta eligendi voluptas error nulla ab fugit? Maiores ad provident deleniti delectus, nam sed fuga pariatur dolorum eaque alias porro accusantium optio iste, laboriosam similique ratione, neque voluptatum fugit. Molestias mollitia debitis unde ea cum explicabo voluptas delectus sint eaque, quasi architecto quaerat dolorum beatae? Debitis nam enim, et id sunt possimus voluptas ea laboriosam vel non sequi maxime repellendus vitae in corporis adipisci rerum fuga optio quibusdam. Sint repellendus nesciunt quidem cumque, qui quo? Corrupti perferendis cum laborum ut dolorum magnam consequuntur, sunt nesciunt odio incidunt eius quasi dolores veniam facilis quia numquam quae. Ea placeat quaerat praesentium nulla non odit voluptatum possimus voluptatem fuga, unde quia dolore cumque eligendi doloribus. Architecto, illo ratione autem dicta, explicabo impedit ipsam at dolorem facere totam in quod consequuntur aliquam. Recusandae, a laudantium, iure molestias alias, ratione deserunt officiis dolorum ut nesciunt ipsum vel qui cumque quod nihil architecto quisquam! Velit ullam aliquam neque quidem quae laborum voluptate, voluptatum cumque iste eaque, facilis dolore voluptatibus tempore suscipit asperiores excepturi dignissimos iure beatae, aspernatur error sed quia! Neque consectetur soluta voluptatibus perferendis, aperiam ex explicabo mollitia error repellendus consequatur voluptate ea sed ullam inventore obcaecati necessitatibus similique. Repudiandae laudantium iusto perspiciatis. Et quae nostrum earum praesentium accusamus provident consectetur deserunt maxime harum dicta quisquam ipsa, ipsum facilis velit sunt suscipit delectus eum nihil? Qui, cumque! Eos similique beatae ipsam, ratione ipsa ducimus neque earum magnam ab, consectetur quod nihil? Eligendi explicabo officia ab itaque enim. Quis iusto aliquam, saepe aliquid tempore natus assumenda, veritatis accusamus nemo dolorum voluptatem tenetur illo perspiciatis amet deleniti dolorem impedit. Incidunt numquam eaque placeat. Neque consectetur assumenda quibusdam distinctio id cupiditate sit ex at nesciunt omnis tempore amet, natus esse magni itaque optio dolore impedit. Soluta, itaque debitis quam iste modi magnam, commodi quis hic similique at optio. Itaque unde nemo tempora, corrupti amet, laboriosam ipsam consectetur, fugit nam iusto nostrum aspernatur aut veritatis voluptate? Harum deleniti voluptatem porro quas inventore dolores possimus repellendus minima similique iste non, asperiores doloribus magni amet in est. Cumque, corporis distinctio expedita voluptas aliquid maxime? Quasi earum, quibusdam voluptate, sed, itaque culpa officiis temporibus quae omnis odit ex dolorum iure. Asperiores autem ab laborum fuga officia veniam possimus id nostrum, omnis quaerat veritatis eos laudantium aspernatur nisi mollitia, atque impedit perferendis deserunt eaque corrupti tempora praesentium? Nemo rerum fugit quis suscipit consequatur labore doloribus amet laborum consectetur molestiae id eveniet corrupti, facere facilis voluptatibus ex vero modi excepturi soluta earum odio temporibus minus rem saepe! Dolorum officia quam commodi! Dolor, eligendi ipsam alias eos quam excepturi labore recusandae quibusdam, molestiae, officia cumque pariatur. Aspernatur officia fugit consequuntur minima delectus amet vero possimus iste inventore quae et, autem sint distinctio voluptatem quidem illum voluptates nulla facere dicta, facilis veritatis! Sit consequuntur neque quidem nihil porro ea sequi hic, placeat nisi earum, itaque dolorem et eum saepe nam iusto quia? Nisi, ipsa mollitia. Praesentium mollitia tenetur dolorum molestias quibusdam unde ipsa provident! Illum pariatur laudantium ducimus similique laboriosam, a voluptate sequi facere quidem accusantium exercitationem optio voluptates inventore blanditiis consectetur aliquam sint libero! Aut perspiciatis earum officiis dolore sed, facere autem similique totam, obcaecati, repudiandae ad! Dolore atque tenetur fugit, quia ratione eveniet aspernatur tempore necessitatibus recusandae? Deserunt, sequi odit tenetur provident, aliquam libero nesciunt similique vero perferendis quas dicta debitis dolorum veniam illum! Eligendi quasi quia cupiditate repellendus sequi tenetur voluptate. Quas, obcaecati necessitatibus, veniam debitis totam ab dolor iste quis, voluptate minima incidunt cumque. Quis quibusdam, blanditiis incidunt eos, ducimus officia, tempore ad est ipsam dolore nostrum. Quis, praesentium nemo facilis quidem adipisci modi eius molestias quod possimus beatae animi a sed minima delectus in nihil mollitia laborum? Obcaecati consequatur perspiciatis illum, soluta veniam provident. Animi ratione voluptatibus quibusdam itaque porro quisquam minus quis veniam. Sequi minima quisquam modi molestiae ad! Dolorum error dolorem distinctio rem, quod quia cupiditate, cumque similique aliquid ipsa quidem eaque vitae expedita eum dolor veniam voluptas itaque impedit nam sapiente delectus aspernatur sed facilis accusamus. Similique sit expedita perferendis, dignissimos temporibus soluta, minus nihil sunt architecto repellendus culpa. Culpa, ratione. Sed, consequatur! Ad pariatur hic voluptates quos, itaque culpa odit aperiam. Quos adipisci distinctio dolor excepturi labore nesciunt quibusdam dolores enim ut numquam hic, quo dicta nihil? Eligendi quidem, sapiente voluptate cum odit error ducimus illum id? Aliquid laudantium modi molestiae? Minus aspernatur exercitationem molestiae fuga officiis itaque accusantium quasi, eaque illum rem! Illo, sit, harum quaerat ab ut, fugit placeat enim atque libero mollitia dignissimos error minima debitis! Molestiae unde obcaecati cum, nulla reiciendis adipisci optio dignissimos soluta ex aut iure doloribus quis repellendus id libero accusantium laudantium inventore minima, exercitationem sapiente, ipsam non neque? Praesentium itaque corporis debitis exercitationem velit laborum porro veniam quos eius. Atque consectetur asperiores laboriosam inventore commodi qui, nesciunt odit accusantium ex consequuntur vitae maiores. Expedita doloribus illum quisquam, molestiae fuga dolorum repellendus aperiam temporibus veniam! Illum voluptate aperiam quam provident dolore, illo recusandae quos modi reiciendis, maiores minima, culpa corporis omnis blanditiis iste quae nisi in! Nesciunt nemo corporis, consectetur expedita eos sequi adipisci iure quibusdam aut et soluta praesentium harum, quam accusantium alias perspiciatis rerum ullam velit ipsam quaerat eum dolor. Labore, accusamus tenetur maiores ratione officiis blanditiis aperiam nam, quibusdam minima distinctio sit illo odio id at totam consequuntur numquam repudiandae ex quos deleniti neque fugit consequatur. Voluptate quidem incidunt cumque, beatae facere repellat, itaque ut ducimus ratione consequuntur a saepe ipsam similique quae optio ab repudiandae, magni sunt quam nemo exercitationem rem dolor. Harum vero, amet asperiores omnis praesentium molestiae earum beatae culpa, nesciunt provident inventore, voluptatum nisi obcaecati consequatur odit tempore ratione quam ab aspernatur optio.
-   </main>
+    <main>
+      <section className="container px-4 py-10 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center">
+        <div className="w-full text-center lg:text-left lg:w-1/2 lg:-mt-8">
+          <h1 className="text-3xl leading-snug text-gray-800 dark:text-gray-200 md:text-4xl">
+            <span className="font-semibold">Blogify:</span> A blog app for devs<br className="hidden lg:block" />
+            Write your blogs in <span ref={el} className="font-semibold underline decoration-primary">Markdown</span>, just as you do on your GitHub
+          </h1>
+          <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">
+            Easily create and manage your blog posts with Markdown. Enjoy the simplicity of writing and the power of GitHub-like formatting!
+          </p>
+          <div className="mt-6 bg-transparent border rounded-lg dark:border-gray-700 lg:w-2/3 focus-within:border-primary focus-within:ring focus-within:ring-primary dark:focus-within:border-primary focus-within:ring-opacity-20">
+            <form action="https://www.example.com/search" className="flex flex-wrap justify-between md:flex-row">
+              <input type="search" name="query" placeholder="Search Blogs" required className="flex-1 h-10 px-4 m-1 text-gray-700 placeholder-gray-400 bg-transparent border-none appearance-none lg:h-12 dark:text-gray-200 focus:outline-none focus:placeholder-transparent focus:ring-0" />
+              <button type="submit" className="flex items-center justify-center w-full p-2 m-1 text-white dark:text-black transition-colors duration-300 transform rounded-lg lg:w-12 lg:h-12 lg:p-0 bg-primary hover:bg-primary/70 focus:outline-none focus:bg-primary/70">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div className="w-full mt-4 lg:mt-0 lg:w-1/2">
+          <img src="https://www.creative-tim.com/twcomponents/svg/website-designer-bro-purple.svg" alt="Blogify Markdown" className="w-full h-full max-w-md mx-auto" />
+        </div>
+      </section>
+
+        <section className="text-gray-600 body-font">
+          <div className="container px-5 py-24 mx-auto">
+          <h1 className="text-4xl pb-10 mb-4 font-bold text-primary text-center">Popular Blogs</h1>
+            <div className="flex flex-wrap -m-4">
+              <div className="p-4 lg:w-1/3">
+                <div className="h-full bg-gray-100 dark:bg-white bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+                  <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Raclette Blueberry Nextious Level</h1>
+                  <p className="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                  <a className="text-blue-500 inline-flex items-center">Learn More
+                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                  <div className="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+                    <span className="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                      <svg className="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>1.2K
+                    </span>
+                    <span className="text-gray-400 inline-flex items-center leading-none text-sm">
+                      <svg className="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>6
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="p-4 lg:w-1/3">
+                <div className="h-full bg-gray-100 dark:bg-white bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+                  <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Ennui Snackwave Thundercats</h1>
+                  <p className="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                  <a className="text-blue-500 inline-flex items-center">Learn More
+                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                  <div className="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+                    <span className="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                      <svg className="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>1.2K
+                    </span>
+                    <span className="text-gray-400 inline-flex items-center leading-none text-sm">
+                      <svg className="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>6
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="p-4 lg:w-1/3">
+                <div className="h-full bg-gray-100 dark:bg-white bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+                  <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Selvage Poke Waistcoat Godard</h1>
+                  <p className="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                  <a className="text-blue-500 inline-flex items-center">Learn More
+                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                  <div className="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+                    <span className="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                      <svg className="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>1.2K
+                    </span>
+                    <span className="text-gray-400 inline-flex items-center leading-none text-sm">
+                      <svg className="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>6
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
   );
 }

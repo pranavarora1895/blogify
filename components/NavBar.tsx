@@ -1,11 +1,12 @@
 'use client';
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { buttonVariants } from "@/components/ui/button"
 import { useTheme } from "next-themes"
 import { ModeToggle } from './theme-toggle';
 import { HamburgerMenuIcon } from '@radix-ui/react-icons';
+import LoadingBar from 'react-top-loading-bar'
 import {
     Sheet,
     SheetContent,
@@ -14,13 +15,40 @@ import {
     SheetTitle,
     SheetTrigger,
 } from "@/components/ui/sheet"
+import { usePathname } from 'next/navigation';
 
 
 const NavBar = () => {
+    const [progress, setProgress] = useState(0)
+    const pathname = usePathname()
+    useEffect(() => {
+        setProgress(30)
+        setTimeout(() => {
+            setProgress(70)
+
+        }, 100);
+        setTimeout(() => {
+            setProgress(100)
+
+        }, 600);
+
+    }, [pathname])
+
+    useEffect(() => {
+        setTimeout(() => {
+            setProgress(0)
+        }, 800);
+    }, [])
+
     const { setTheme } = useTheme()
     return (
-        <nav className='h-16 bg-background/60 sticky top-0 border-b px-6 backdrop-blur flex items-center justify-between'>
-            <div className='font-bold md:text-xl text-md'>Blogify</div>
+        <nav className='h-16 bg-background/60 sticky top-0 border-b px-6 backdrop-blur flex items-center justify-between z-10'>
+            <LoadingBar
+        color='#6028ff'
+        progress={progress}
+        onLoaderFinished={() => setProgress(0)}
+      />
+            <div className='font-bold md:text-xl text-md'><Link href={'/'}>Blogify</Link></div>
             <ul className='hidden md:flex w-full justify-end space-x-6 items-center '>
                 <li><Link href={"/"}>Home</Link></li>
                 <li><Link href={"/about"}>About</Link></li>
