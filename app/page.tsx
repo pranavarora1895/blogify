@@ -8,7 +8,7 @@ export default function Home() {
   const el = useRef(null);
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ['Markdown', '.md format'],
+      strings: ['.md format', 'Markdown'],
       typeSpeed: 100,
     });
 

@@ -60,7 +60,7 @@ module.exports = {
 
 Here’s a simple example of a Tailwind CSS-based layout:
 
-```html
+```html showLineNumbers {9-10,13-15}
 <!DOCTYPE html>
 <html lang="en">
 <head>

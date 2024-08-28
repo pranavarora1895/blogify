@@ -17,7 +17,7 @@ OOP is a programming paradigm based on the concept of "objects", which can conta
 
 In Python, a class is defined using the `class` keyword. Here's a basic example:
 
-```python
+```python showLineNumbers {1,10}
 class Dog:
     def __init__(self, name, age):
         self.name = name
@@ -36,7 +36,7 @@ In this example, Dog is a class with an \__init__ method (the constructor) and a
 Inheritance
 Inheritance allows a class to inherit attributes and methods from another class. This promotes code reuse and a hierarchical class structure.
 
-```python
+```python showLineNumbers {1,8,12}
 class Animal:
     def __init__(self, name):
         self.name = name
@@ -65,7 +65,7 @@ In this example, Cat and Dog inherit from Animal and override the speak method.
 Encapsulation
 Encapsulation is the concept of restricting access to certain details of an object and only exposing what is necessary. In Python, this is typically achieved through naming conventions.
 
-```python
+```python showLineNumbers {1-13}
 class Person:
     def __init__(self, name, age):
         self.name = name
