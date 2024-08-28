@@ -6,11 +6,13 @@ import Link from 'next/link';
 import fs, { readFileSync } from 'fs'
 import matter from 'gray-matter';
 import { Metadata } from 'next';
+import path from 'path';
 
 const dirContent = fs.readdirSync('content', 'utf-8')
 
 const blogs: Blog[] = dirContent.map(file =>{
-  const fileContent = readFileSync(`content/${file}`, 'utf-8');
+  let usersPath = path.join(process.cwd(), `content/${file}`);
+  const fileContent = readFileSync(usersPath, 'utf-8');
   const {data} = matter(fileContent)
   const value: Blog = {
     slug: data.slug,

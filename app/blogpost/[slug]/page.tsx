@@ -14,7 +14,7 @@ import rehypeSlug from 'rehype-slug'
 import rehypePrettyCode from "rehype-pretty-code";
 import { transformerCopyButton } from '@rehype-pretty/transformers'
 import { Metadata, ResolvingMetadata } from 'next'
-
+import path from 'path';
 const processor = unified()
     .use(remarkParse)
     .use(remarkRehype)
@@ -35,7 +35,8 @@ const processor = unified()
 
 const BlogPage = async ({ params }: { params: { slug: string } }) => {
     const filePath = `content/${params.slug}.md`
-    const fileContent = fs.readFileSync(filePath, 'utf-8');
+    let usersPath = path.join(process.cwd(), filePath);
+    const fileContent = fs.readFileSync(usersPath, 'utf-8');
     const { data, content } = matter(fileContent)
     const htmlContent = (await processor.process(content)).toString()
 
