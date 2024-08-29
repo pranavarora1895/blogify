@@ -25,6 +25,7 @@ To get started with **Blogify**, follow these steps:
    ```bash
    git clone https://github.com/yourusername/blogify.git
    cd blogify
+   ```
 
 2. Install dependencies:
 
