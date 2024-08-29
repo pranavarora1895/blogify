@@ -48,7 +48,7 @@ const BlogPage = async ({ params }: { params: { slug: string } }) => {
                     {// eslint-disable-next-line @next/next/no-img-element
                     }
                     <img src={data.image ? data.image : "https://via.placeholder.com/150"} alt={data.title} className="w-full h-48 object-cover" />
-                    <div dangerouslySetInnerHTML={{ __html: htmlContent }}></div>
+                    <div className='text-sm md:text-base' dangerouslySetInnerHTML={{ __html: htmlContent }}></div>
                 </div>
 
                 <OnThisPage className='text-xs w-1/2' htmlContent={htmlContent} />
