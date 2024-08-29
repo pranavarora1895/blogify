@@ -42,39 +42,39 @@ export default function Home() {
 
       <section className="container px-4 py-10 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center" id='how-it-works'>
         <div className="w-full lg:w-1/2">
-          <h1 className="text-3xl mb-6">How it works?</h1>
+          <h1 className="text-3xl mb-6 font-bold">How it works?</h1>
           <p className="mb-4">
             Its easy. Just follow these steps to write your blog.
           </p>
           <div className="space-y-4">
             <div>
-              <p className="mb-2">1. Clone the repository:</p>
+              <p className="mb-2 font-semibold">1. Clone the repository:</p>
               <code className="block p-2 rounded text-xs md:text-sm bg-secondary text-primary">
                 git clone https://github.com/pranavarora1895/blogify.git
               </code>
             </div>
             <div>
-              <p className="mb-2">2. Create a new branch that contains your GitHub username:</p>
+              <p className="mb-2 font-semibold">2. Create a new branch that contains your GitHub username:</p>
               <code className="block p-2 rounded text-xs md:text-sm bg-secondary text-primary">
                 git checkout -b &lt;githubUsername-your-branch-name&gt;
               </code>
             </div>
             <div>
-              <p className="mb-2">3. Navigate to the <code className="text-red-600">content/</code> folder:</p>
+              <p className="mb-2 font-semibold">3. Navigate to the <code className="text-red-600 dark:text-yellow-300">content/</code> folder:</p>
               <code className="block p-2 rounded text-xs md:text-sm bg-secondary text-primary">
                 cd content/
               </code>
             </div>
             <div>
-              <p className="mb-2">4. Create or edit a Markdown file (.md):</p>
+              <p className="mb-2 font-semibold">4. Create or edit a Markdown file (.md):</p>
               <code className="block p-2 rounded text-xs md:text-sm bg-secondary text-primary">
                 touch &lt;your-file-name.md&gt;
               </code>
             </div>
             <div>
-              <p className="mb-2">5. Add your content in the file and save it.</p>
-              <p className="mb-2 font-semibold text-red-600">IMPORTANT:</p>
-              <p className="mb-2">Your <code className="text-red-600">.md</code> file should contain fields like these initially(starting from line 1):</p>
+              <p className="mb-2 font-semibold">5. Add your content in the file and save it.</p>
+              <p className="mb-2 font-bold text-red-600 dark:text-yellow-300">IMPORTANT:</p>
+              <p className="mb-2">Your <code className="text-red-600 dark:text-yellow-300">.md</code> file should contain fields like these initially(starting from line 1):</p>
               <code className="block p-2 rounded text-xs md:text-sm bg-secondary text-primary">
                 <br />
                 title: Title of your blog
@@ -119,7 +119,7 @@ export default function Home() {
               </code>
             </div>
             <div>
-              <p className="mb-2">6. Stage and commit your changes:</p>
+              <p className="mb-2 font-semibold">6. Stage and commit your changes:</p>
               <code className="block p-2 rounded text-xs md:text-sm bg-secondary text-primary">
                 git add content/&lt;your-file-name.md&gt;
               </code>
@@ -128,17 +128,17 @@ export default function Home() {
               </code>
             </div>
             <div>
-              <p className="mb-2">7. Push the changes to your branch:</p>
+              <p className="mb-2 font-semibold">7. Push the changes to your branch:</p>
               <code className="block p-2 rounded text-xs md:text-sm bg-secondary text-primary">
                 git push origin your-branch-name
               </code>
             </div>
           </div>
-          <p className="mt-6">
-            After pushing, create a Pull Request on GitHub to merge your changes.
+          <p className="mt-6 font-semibold">
+            8. After pushing, create a Pull Request on GitHub to merge your changes.
           </p>
           <p className="mt-6">
-            Once its merged, you can view your blog listed in <Link href={'blog/'} className={buttonVariants({ variant: "default" })}>Blogs</Link>
+          🎉 Once its merged, you can view your blog listed in <Link href={'blog/'} className={buttonVariants({ variant: "default" })}>Blogs</Link> 
           </p>
         </div>
       </section>
