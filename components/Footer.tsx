@@ -8,7 +8,7 @@ const Footer = () => {
                 {/* About Me Section */}
                 <div className="mb-4">
                     <h3 className="text-sm md:text-lg font-bold">About Me</h3>
-                    <p className="text-sm w-1/2">
+                    <p className="text-sm md:w-1/2">
                         I&apos;m <a className='text-yellow-300 underline' rel="noopener noreferrer" href="https://github.com/pranavarora1895" target='_blank'>Pranav Arora</a>, a passionate developer committed to creating impactful solutions. I love building projects that help others learn, share, and grow in their fields.
                     </p>
                 </div>
