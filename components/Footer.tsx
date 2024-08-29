@@ -4,10 +4,10 @@ import React from 'react'
 const Footer = () => {
     return (
         <footer className="bg-gray-800 text-white py-6">
-            <div className="container mx-auto px-4 flex">
+            <div className="container mx-auto px-4 flex flex-col md:flex-row md:justify-between">
                 {/* About Me Section */}
                 <div className="mb-4">
-                    <h3 className="text-lg font-bold">About Me</h3>
+                    <h3 className="text-sm md:text-lg font-bold">About Me</h3>
                     <p className="text-sm w-1/2">
                         I&apos;m <a className='text-yellow-300 underline' rel="noopener noreferrer" href="https://github.com/pranavarora1895" target='_blank'>Pranav Arora</a>, a passionate developer committed to creating impactful solutions. I love building projects that help others learn, share, and grow in their fields.
                     </p>
@@ -15,7 +15,7 @@ const Footer = () => {
 
                 {/* Feedback Link */}
                 <div className="mb-4">
-                    <h3 className="text-lg font-bold">Feedback</h3>
+                    <h3 className="text-sm md:text-lg font-bold">Feedback</h3>
                     <p className="text-sm">
                         Found an issue or have suggestions? Feel free to provide feedback on our
                         <a href="https://github.com/pranavarora1895/blogify.git" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline"> GitHub repository</a>.

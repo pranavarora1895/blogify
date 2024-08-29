@@ -49,25 +49,25 @@ export default function Home() {
           <div className="space-y-4">
             <div>
               <p className="mb-2">1. Clone the repository:</p>
-              <code className="block p-2 rounded text-sm bg-secondary text-primary">
+              <code className="block p-2 rounded text-xs md:text-sm bg-secondary text-primary">
                 git clone https://github.com/pranavarora1895/blogify.git
               </code>
             </div>
             <div>
               <p className="mb-2">2. Create a new branch that contains your GitHub username:</p>
-              <code className="block p-2 rounded text-sm bg-secondary text-primary">
+              <code className="block p-2 rounded text-xs md:text-sm bg-secondary text-primary">
                 git checkout -b &lt;githubUsername-your-branch-name&gt;
               </code>
             </div>
             <div>
               <p className="mb-2">3. Navigate to the <code className="text-red-600">content/</code> folder:</p>
-              <code className="block p-2 rounded text-sm bg-secondary text-primary">
+              <code className="block p-2 rounded text-xs md:text-sm bg-secondary text-primary">
                 cd content/
               </code>
             </div>
             <div>
               <p className="mb-2">4. Create or edit a Markdown file (.md):</p>
-              <code className="block p-2 rounded text-sm bg-secondary text-primary">
+              <code className="block p-2 rounded text-xs md:text-sm bg-secondary text-primary">
                 touch &lt;your-file-name.md&gt;
               </code>
             </div>
@@ -75,7 +75,7 @@ export default function Home() {
               <p className="mb-2">5. Add your content in the file and save it.</p>
               <p className="mb-2 font-semibold text-red-600">IMPORTANT:</p>
               <p className="mb-2">Your <code className="text-red-600">.md</code> file should contain fields like these initially(starting from line 1):</p>
-              <code className="block p-2 rounded text-sm bg-secondary text-primary">
+              <code className="block p-2 rounded text-xs md:text-sm bg-secondary text-primary">
                 <br />
                 title: Title of your blog
                 <br />
@@ -97,7 +97,7 @@ export default function Home() {
               </code>
               <br />
               <p className="mb-2">For example:</p>
-              <code className="block p-2 rounded text-sm bg-secondary text-primary">
+              <code className="block p-2 rounded text-xs md:text-sm bg-secondary text-primary">
                 <br />
                 title: Intro to Tailwind CSS
                 <br />
@@ -109,7 +109,7 @@ export default function Home() {
                 <br />
                 description: A beginner&apos;s guide to Tailwind CSS, covering its utility-first approach and how to get started with this powerful framework.
                 <br />
-                image: https://images.pexels.com/photos/3301083/pexels-photo-3301083.jpeg
+                image: https://images.pexels.com/photos
                 <br />
                 ---
                 <br />
@@ -120,16 +120,16 @@ export default function Home() {
             </div>
             <div>
               <p className="mb-2">6. Stage and commit your changes:</p>
-              <code className="block p-2 rounded text-sm bg-secondary text-primary">
+              <code className="block p-2 rounded text-xs md:text-sm bg-secondary text-primary">
                 git add content/&lt;your-file-name.md&gt;
               </code>
-              <code className="block p-2 rounded text-sm bg-secondary text-primary">
+              <code className="block p-2 rounded text-xs md:text-sm bg-secondary text-primary">
                 git commit -m &lsquo;Add new content&rsquo;
               </code>
             </div>
             <div>
               <p className="mb-2">7. Push the changes to your branch:</p>
-              <code className="block p-2 rounded text-sm bg-secondary text-primary">
+              <code className="block p-2 rounded text-xs md:text-sm bg-secondary text-primary">
                 git push origin your-branch-name
               </code>
             </div>
