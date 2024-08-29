@@ -76,6 +76,7 @@ export default function Home() {
               <p className="mb-2 font-bold text-red-600 dark:text-yellow-300">IMPORTANT:</p>
               <p className="mb-2">Your <code className="text-red-600 dark:text-yellow-300">.md</code> file should contain fields like these initially(starting from line 1):</p>
               <code className="block p-2 rounded text-xs md:text-sm bg-secondary text-primary">
+                ---
                 <br />
                 title: Title of your blog
                 <br />
@@ -98,6 +99,7 @@ export default function Home() {
               <br />
               <p className="mb-2">For example:</p>
               <code className="block p-2 rounded text-xs md:text-sm bg-secondary text-primary">
+                ---
                 <br />
                 title: Intro to Tailwind CSS
                 <br />
