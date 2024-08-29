@@ -1,12 +1,18 @@
 # Blogify
 
-**Blogify** is a modern and lightweight blog application built with Next.js, shadcn, and Tailwind CSS. It provides a simple yet powerful platform for creating, managing, and sharing blog content.
+**Blogify** is a modern and lightweight blog application designed with Next.js, Shadcn, Tailwind CSS, and Rehype. It offers a streamlined yet robust platform for creating, managing, and sharing blog content.
+
+To get started, clone the repository and write your blog posts in Markdown. Once your changes are ready, merge them into the main branch to have your posts automatically listed and displayed on the application.
+
+> ## How it works?
+> Checkout our simple instructions on how to post your blogs [here](https://blogify-eight-gules.vercel.app/#how-it-works).
 
 ## Features
 
 - **Fast and Responsive**: Optimized for speed and mobile-friendliness.
 - **Easy Styling**: Uses Tailwind CSS for utility-first, customizable styling.
 - **UI Components**: shadcn components for reusable, accessible, and beautiful UI elements.
+- **Unified and Rehype plugins**: It generates HTML content out of Markdown document.
 - **SEO Friendly**: Built with best practices for search engine optimization.
 - **Easy to Deploy**: Deploy anywhere with Vercel or other platforms supporting Next.js.
 
