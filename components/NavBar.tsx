@@ -51,10 +51,9 @@ const NavBar = () => {
             <div className='font-bold md:text-xl text-md'><Link href={'/'}>Blogify</Link></div>
             <ul className='hidden md:flex w-full justify-end space-x-6 items-center '>
                 <li><Link href={"/"}>Home</Link></li>
-                <li><Link href={"/blog"}>Blog</Link></li>
+                <li><Link href={"/blog"}>View Blogs</Link></li>
                 <li className="buttons space-x-4 px-4">
-                    <Link href={'#how-it-works'} className={buttonVariants({ variant: "default" })}>Post your blog</Link>
-                    <Link href={'/blog'} className={buttonVariants({ variant: "outline" })}>View Blogs</Link>
+                    <Link href={'/#how-it-works'} className={buttonVariants({ variant: "default" })}>Post your blog</Link>
                 </li>
 
             </ul>
@@ -68,10 +67,9 @@ const NavBar = () => {
                         <SheetTitle className='py-4'>Menu</SheetTitle>
                         <ul className='w-full justify-center items-center space-y-4'>
                             <li><Link href={"/"}>Home</Link></li>
-                            <li><Link href={"/blog"}>Blog</Link></li>
+                            <li><Link href={"/blog"}>View Blogs</Link></li>
                             <li className="buttons space-x-4 py-4">
-                                <Link href={'#how-it-works'} className={buttonVariants({ variant: "default" })}>Post your blog</Link>
-                                <Link href={'/blog'} className={buttonVariants({ variant: "outline" })}>View Blogs</Link>
+                                <Link href={'/#how-it-works'} className={buttonVariants({ variant: "default" })}>Post your blog</Link>
                             </li>
 
                         </ul>
