@@ -1,11 +1,12 @@
 ---
-title: Mastering Angular Component Styling
+title: Master Angular Component Library CSS
 slug: master-angular-component-styling
-date: 2024-09-07
+date: 2024-08-27
 author: Pranav Arora
-description: Mastering Angular Component Styling: A Guide to CSS Layering and Dynamic Class Management. No ng:deep required!
+description: Mastering Angular Component Styling, a guide to CSS Layering and Dynamic Class Management. No ng:deep required!
 image: https://dev-to-uploads.s3.amazonaws.com/uploads/articles/isadyg3qovvb7kvpjri4.png
 ---
+
 
 ## Introduction
 
