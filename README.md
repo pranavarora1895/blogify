@@ -2,6 +2,14 @@
 
 **Blogify** is a modern and lightweight blog application designed with Next.js, Shadcn, Tailwind CSS, and Rehype. It offers a streamlined yet robust platform for creating, managing, and sharing blog content.
 
+## Checkout the demo
+
+
+
+https://github.com/user-attachments/assets/b7428aaf-43a4-44f9-bfbc-2a03707df014
+
+
+
 To get started, clone the repository and write your blog posts in Markdown. Once your changes are ready, merge them into the main branch to have your posts automatically listed and displayed on the application.
 
 > ## How it works?
